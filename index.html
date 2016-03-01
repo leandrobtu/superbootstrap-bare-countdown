@@ -20,29 +20,29 @@
       <div id="countdown" class="row">
         <div class="col-xs-6 col-sm-3 countdown-item">
           <p id="days" class="countdown"></p>
-          <p class="countdown-description">Days</p>
+          <p class="countdown-description">Dias</p>
         </div>
         <!-- CountDown block - Hours -->
         <div class="col-xs-6 col-sm-3 countdown-item countdown-item-xs-last">
           <p id="hours" class="countdown"></p>
-          <p class="countdown-description">Hours</p>
+          <p class="countdown-description">Horas</p>
         </div>
         <!-- CountDown block - Minutes -->
         <div class="col-xs-6 col-sm-3 countdown-item">
           <p id="minutes" class="countdown"></p>
-          <p class="countdown-description">Minutes</p>
+          <p class="countdown-description">Minutos</p>
         </div>
         <!-- CountDown block - Seconds -->
         <div class="col-xs-6 col-sm-3 countdown-item countdown-item-last">
           <p id="seconds" class="countdown"></p>
-          <p class="countdown-description">Seconds</p>
+          <p class="countdown-description">Segundos</p>
         </div>
       </div>
     </div>
     <!-- Updating live counters -->
     <script>
       jQuery(window).load(function () {
-          $('#countdown').countdown("2015/10/10", function (event) {
+          $('#countdown').countdown("2020/10/10 13:40:50", function (event) {
               $(this).find("#days").html(event.strftime("%D"));
               $(this).find("#hours").html(event.strftime("%H"));
               $(this).find("#minutes").html(event.strftime("%M"));
